@@ -69,6 +69,7 @@ public class KeywordSearcher {
                     frontQuote=false;
                 }else{
                     if(s.length()>0)
+
                         searchKeys.add(new SearchHitWithKey(s));
                     s="";
                     frontQuote=true;
@@ -104,7 +105,8 @@ public class KeywordSearcher {
             Thread t = new Thread(){
 
                 public void run(){
-                   simpleSearch(s);
+
+                    simpleSearch(s);
                 }
 
             };
@@ -170,20 +172,7 @@ public class KeywordSearcher {
             hitAndKey.searchHits.add(-1);
     }
 
-    private void joinAll(){
 
-//
-//        try {
-//            for (Thread i : threads) {
-//
-//                i.join();
-//
-//            }
-//        }catch (Exception e){
-//
-//        }
-
-    }
 
 
 

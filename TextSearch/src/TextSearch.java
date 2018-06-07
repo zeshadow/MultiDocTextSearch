@@ -107,8 +107,8 @@ public class TextSearch {
 
         TextSearch ts = new TextSearch();
         ts.readFiles("test");
-        ts.setToSearch(" \"veritatis et quasi\" Zeyad test Hello in");
 
+        ts.setToSearch(" \"veritatis et quasi\" Zeyad test Hello in");
         ts.addDocuments();
 
         ts.hitsFound();
